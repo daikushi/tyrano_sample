@@ -1,45 +1,68 @@
 *start
 
-[title name="走るか寝るかするメロス"]
+[title name="究極の二択問題"]
 [hidemenubutton]
 [wait time=200]
 [freeimage layer="base"]
 
-「走るか寝るかするメロス」[l][r]
+「究極の二択問題」[l][r]
 
-メロスは激怒した。[l][r]
+ボンはある資格の試験会場に向かう道中に、細い路地裏に入っていた。[l][r]
 
-必ず、かの邪智暴虐の王を除かねばならぬと決意した。[l][r]
+突然、目の前に爺が現れてボンの前に立ちふさがった。[l][r]
 
-(中略)[l][r]
+爺『これも試験の一環である。今から儂が出すクイズに10秒以内で答えること。
+　　正解したらここを通してやろう。ただし、間違えたらそのときは・・・・』[l][r]
 
-ああ、何もかも、ばかばかしい。私は、醜い裏切り者だ。どうとも、勝手にするがよい。やんぬる哉。[l][r]
-メロスは...[l][r]
+ボン『望むところだ』[l][r]
 
-[link target=*tag_sleep] →寝る [endlink][r]
-[link target=*tag_run] →走る [endlink][r]
+爺『ではいくぞ。
+　　貴様の恋人と父親が目の前で賊に捕まってしまった。
+　　どちらか一人しか助けられないとき、貴様はどちらを助ける？』[l][r]
+
+[link target=*tag_love] →恋人 [endlink][r]
+[link target=*tag_dad] →父親 [endlink][r]
+[link target=*tag_ok] →??? [endlink][r]
 [s]
 
-*tag_sleep
+*tag_love
 
 [cm]
 
-[bg storage=sleep.jpg time=500]
+[bg storage=dad.jpg time=500]
 
-メロスは死んだように深く眠った。[l][r]
-勇者は、ひどく赤面した。[r]
+爺『不正解じゃ。
+　　父親を捨てるやつなど言語道断！失格とする。』[l][r]
 
 【 BAD END 】[l][cm]
 
 [jump target=*start]
 
-*tag_run
+*tag_dad
 
-[bg storage=run.jpg time=500]
+[bg storage=dad.jpg time=500]
 
 [cm]
-メロスは黒い風のように走った。[l][r]
-陽は、ゆらゆら地平線に没し、まさに最後の一片の残光も、消えようとした時、メロスは疾風の如く刑場に突入した。間に合った。[r]
+爺『不正解じゃ。
+　　恋人を捨てるやつなど言語道断！失格とする。』[l][r]
+
+【 BAD END 】[l][cm]
+
+[jump target=*start]
+
+*tag_ok
+
+[cm]
+
+[bg storage=ok.jpg time=500]
+
+ボンは迷った結果10秒以内に正解が出せなかった。[l][r]
+
+すると急に爺が不気味に笑った。[l][r]
+
+爺『沈黙。それこそが正解である。
+　　今までの挑戦者はどちらかを選ぶぼんくらばったりじゃったからの。
+　　貴様からは何か違うものを感じた。さあ通るがよい。』[l][r]
 
 【 GOOD END 】[l][cm]
 
